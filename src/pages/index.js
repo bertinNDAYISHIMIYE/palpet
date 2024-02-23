@@ -6,6 +6,7 @@ import Gallery from "@/components/Gallery";
 import About from "@/components/About";
 import { useMemo } from "react";
 import dynamic from 'next/dynamic';
+import Contact from "@/components/Contact";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,6 +27,7 @@ export default function Home() {
     <Gallery />
    <About />
    <Map position={[47.5019232,19.0827007]} zoom={20}/>
+   <Contact />
     </main>
   );
 }
