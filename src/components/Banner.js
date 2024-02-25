@@ -1,4 +1,14 @@
 import React from 'react'
+import { Arvo, Lato } from "next/font/google";
+
+const arvo = Arvo({
+  weight: '400',
+  subsets: ['latin'],
+});
+const lato = Lato({
+  weight: '400',
+  subsets: ['latin'],
+});
 
 export default function Banner() {
   return (
@@ -7,9 +17,9 @@ export default function Banner() {
       <div className="bg-gray-400 flex h-[665px] bg-opacity-45">
         <div className="w-[768px] flex flex-col flex-wrap my-auto ml-4 md:ml-64">
 
-        <h1 className="text-7xl mb-[20px]">Discover Your Perfect Companion</h1>
-        <p className="text-2xl">Explore a world of adorable pets waiting to fill your life with joy and love. Find your furry friend today!</p>
-      <button className="h-14 w-40 md:w-44  px-6 text-gray-100 transition-colors duration-150 bg-gray-700 rounded-lg focus:shadow-outline hover:bg-gray-800 text-xl mt-[40px]">Explore Now</button>
+        <h1 className={`${arvo.className} text-6xl md:text-7xl mb-[20px] text-[rgb(17,24,39 leading-[80px]`}>Discover Your Perfect Companion</h1>
+        <p className={`${lato.className} text-2xl leading-9 decoration-[rgb(17,24,39)]`}>Explore a world of adorable pets waiting to fill your life with joy and love. Find your furry friend today!</p>
+      <button className={`${lato.className} h-14 w-40 md:w-44 px-4 py-3 border-2 border-[rgb(84,94,103)] text-[rgb(255,255,255)] transition-colors duration-150 bg-gray-700 rounded-lg focus:shadow-outline hover:bg-gray-800 text-xl mt-[40px]`}>Explore Now</button>
         </div>
 
       </div>
