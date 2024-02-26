@@ -13,8 +13,8 @@ const lato = Lato({
 export default function Banner() {
   return (
     <>
-    <div className="bg-cover bg-center h-[665px]" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZG9nc3xlbnwwfHwwfHx8MA%3D%3D")' }}>
-      <div className="bg-gray-400 flex h-[665px] bg-opacity-45">
+    <div className="bg-cover bg-center h-[775px]" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZG9nc3xlbnwwfHwwfHx8MA%3D%3D")' }}>
+      <div className="bg-gray-400 flex h-[775px] bg-opacity-45">
         <div className="w-[768px] flex flex-col flex-wrap my-auto ml-4 md:ml-64">
 
         <h1 className={`${arvo.className} text-6xl md:text-7xl mb-[20px] text-[rgb(17,24,39 leading-[80px]`}>Discover Your Perfect Companion</h1>

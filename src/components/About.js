@@ -1,13 +1,22 @@
+import { Arvo, Lato } from "next/font/google";
+
+const arvo = Arvo({
+  weight: '400',
+  subsets: ['latin'],
+});
+const lato = Lato({
+  weight: '400',
+  subsets: ['latin'],
+});
 
 export default function About() {
   return (
-    <div className="bg-[#dae7f4] flex flex-col justify-center items-center m-auto md:h-[540px] md:flex-row  gap-5">
-      <div className="w-screen">
-        <img height={800} width={800} src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZG9nc3xlbnwwfHwwfHx8MA%3D%3D" alt="png" />
+    <div className="bg-[#dae7f4] flex justify-center items-center gap-5">
+      <div className="w-[100%] bg-cover bg-center h-[775px]" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZG9nc3xlbnwwfHwwfHx8MA%3D%3D")' }}>
       </div>
-      <div className="flex flex-col bg-[#dae7f4]">
-        <h2 className="text-3xl py-3">About Us</h2>
-        <p className="w-[50%]">
+      <div className="flex flex-col items-center">
+        <h2 className={`${arvo.className} text-5xl text-[rgb(17,24,39)]`}>About Us</h2>
+        <p className={`${lato.className} w-[60%] text-2xl leading-9 text-center m-auto p-10 text-[rgb(17,24,39)]`}>
         Welcome to Cute Pets, Hungary&apos;s premier destination for all your pet needs. With a passion for animals and a commitment to exceptional customer service, we strive to provide the best products and services for your beloved pets.
 
 At Cute Pets, we understand that pets are an important part of your family.

@@ -1,4 +1,14 @@
 import React, { useState } from 'react';
+import { Arvo, Lato } from "next/font/google";
+
+const arvo = Arvo({
+  weight: '400',
+  subsets: ['latin'],
+});
+const lato = Lato({
+  weight: '400',
+  subsets: ['latin'],
+});
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -21,8 +31,8 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="md:w-[60%] w-[80%] m-auto flex justify-between items-center flex-wrap p-5">
-      <h2 className="p-5 text-2xl md:text-7xl">Reach Out</h2>
+    <div className="h-[675px] md:w-[60%] w-[80%] m-auto flex justify-between items-center flex-wrap p-5">
+      <h2 className={`${arvo.className} text-5xl p-5 text-[rgb(17,24,39)]`}>Reach Out</h2>
 
       <form
         onSubmit={handleSubmit}
@@ -30,7 +40,7 @@ const ContactForm = () => {
       >
         <div className='flex md:justify-center items-center flex-col md:flex-row gap-4'>
             <div>
-          <label htmlFor="name" className="block text-gray-700 text-sm font-bold">
+          <label htmlFor="name" className={`${lato.className} block text-[rgb(17,24,39)] text-base font-normal`}>
             Name
           </label>
           <input
@@ -45,7 +55,7 @@ const ContactForm = () => {
           </div>
           <div>
 
-          <label htmlFor="email" className="block text-gray-700 text-sm font-bold">
+          <label htmlFor="email" className={`${lato.className} block text-[rgb(17,24,39)] text-base font-normal`}>
             Email
           </label>
           <input
@@ -60,11 +70,11 @@ const ContactForm = () => {
           </div>
           </div>
           
-          <label htmlFor="message" className="block text-gray-700 text-sm font-bold">
+          <label htmlFor="message" className={`${lato.className} block text-[rgb(17,24,39)] text-base font-normal`}>
             Message
           </label>
           <textarea
-            id="message"
+            id="message" 
             name="message"
             value={formData.message}
             onChange={handleChange}
@@ -73,7 +83,7 @@ const ContactForm = () => {
             required
           ></textarea>
 
-        <button type="submit" className="bg-slate-700 text-white py-2 px-4 hover:bg-slate-400 self-end">
+        <button type="submit" className={`${lato.className} bg-slate-700 text-white py-2 px-4 hover:bg-slate-400 self-end`}>
           Submit
         </button>
       </form>
