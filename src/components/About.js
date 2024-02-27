@@ -12,11 +12,11 @@ const lato = Lato({
 export default function About() {
   return (
     <div className="bg-[#dae7f4] flex justify-center items-center gap-5">
-      <div className="w-[100%] bg-cover bg-center h-[775px]" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZG9nc3xlbnwwfHwwfHx8MA%3D%3D")' }}>
+      <div className="w-full object-fill bg-cover bg-center h-[775px]" style={{ backgroundImage: 'url("https://media.istockphoto.com/id/519363544/hu/fot%C3%B3/szerelem-a-macska-%C3%A9s-a-kutya-k%C3%B6z%C3%B6tt.jpg?s=612x612&w=0&k=20&c=TzqP0597ScT0tPM-nA5wqvZhUKwSqVELP6C-s2Wbkmw=")' }}>
       </div>
-      <div className="flex flex-col items-center">
+      <div className="w-full flex flex-col items-center">
         <h2 className={`${arvo.className} text-5xl text-[rgb(17,24,39)]`}>About Us</h2>
-        <p className={`${lato.className} w-[60%] text-2xl leading-9 text-center m-auto p-10 text-[rgb(17,24,39)]`}>
+        <p className={`${lato.className} w-[70%] text-2xl leading-9 text-center p-5 text-[rgb(17,24,39)]`}>
         Welcome to Cute Pets, Hungary&apos;s premier destination for all your pet needs. With a passion for animals and a commitment to exceptional customer service, we strive to provide the best products and services for your beloved pets.
 
 At Cute Pets, we understand that pets are an important part of your family.

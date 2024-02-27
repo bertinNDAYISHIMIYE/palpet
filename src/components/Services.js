@@ -12,18 +12,18 @@ const lato = Lato({
 export default function Services() {
     const serviceImg = [
         {
-        url: "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZG9nc3xlbnwwfHwwfHx8MA%3D%3D",
+        url: "https://media.istockphoto.com/id/172859026/photo/black-poodle-in-blue-tub-with-bubbles-on-his-head.webp?b=1&s=170667a&w=0&k=20&c=GfyJlwVqQGJxviDJjNDUIIQ7UOAaHVox3293okxza64=",
         serviceTitle: "Professional pet grooming services",
         serviceDesc: "Our experienced groomers offer full grooming services tailored to your pet's needs"
         },
         {
-          url: "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZG9nc3xlbnwwfHwwfHx8MA%3D%3D",
+          url: "https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHBldCUyMGJvYXJkaW5nfGVufDB8fDB8fHww",
         serviceTitle: "Pet Boarding Daycare",
         serviceDesc: "We provide a clean and safe environment for your pet while you're away, including playtime and socializzzation."
       
           },
           {
-            url: "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZG9nc3xlbnwwfHwwfHx8MA%3D%3D",
+            url: "https://media.istockphoto.com/id/676515066/photo/good-health-is-important.webp?b=1&s=170667a&w=0&k=20&c=bshZTOrr89BG010OifMPez9WMgY2wfDgGedyAxJkdj0=",
         serviceTitle: "Veterinary Care",
         serviceDesc: "Our skilled vetrinarians provide comprehensive medical care to ensure your pet's health and well-being"
       

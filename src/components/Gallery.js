@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Arvo, Lato } from "next/font/google";
+import Image from 'next/image';
 
 const arvo = Arvo({
   weight: '400',
@@ -13,29 +14,29 @@ const lato = Lato({
 export default function Gallery() {
     const img = [
         {
-        url: "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZG9nc3xlbnwwfHwwfHx8MA%3D%3D",
+        url: "https://plus.unsplash.com/premium_photo-1708983589793-56673027592e?q=80&w=2938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         },
         {
-          url: "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZG9nc3xlbnwwfHwwfHx8MA%3D%3D",
+          url: "https://images.unsplash.com/photo-1518378188025-22bd89516ee2?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       
           },
           {
-            url: "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZG9nc3xlbnwwfHwwfHx8MA%3D%3D",
+            url: "https://media.istockphoto.com/id/1497909628/hu/fot%C3%B3/macska-%C3%A9s-kutya-egy%C3%BCtt-%C3%BClnek-a-r%C3%A9ten.jpg?s=612x612&w=0&k=20&c=X8__KYHLaa6mWIrwRl5xFDoJ2ebfB3-muIgNPHwOlJA=",
       
       
             },
             {
-              url: "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZG9nc3xlbnwwfHwwfHx8MA%3D%3D",
+              url: "https://images.unsplash.com/photo-1509205477838-a534e43a849f?q=80&w=2956&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         
         
               },
               {
-                url: "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZG9nc3xlbnwwfHwwfHx8MA%3D%3D",
+                url: "https://images.unsplash.com/photo-1592194996308-7b43878e84a6?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           
           
                 },
                 {
-                  url: "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZG9nc3xlbnwwfHwwfHx8MA%3D%3D",
+                  url: "https://images.unsplash.com/photo-1570824104453-508955ab713e?q=80&w=2811&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             
             
                   }
@@ -88,8 +89,8 @@ export default function Gallery() {
     <div className='w-[1320px] flex flex-col m-auto justify-center'>
       <h2 className={`${arvo.className} text-5xl text-[rgb(17,24,39)]`}>Gallery</h2>
     
-    <div className=" flex flex-col md:flex-row justify-center items-center gap-20 flex-wrap m-auto pt-5">
-          {img.map((image, index) => <img className="w-[386px] rounded-xl mb-4" key={index} src={image.url} alt="png" />)}
+    <div className="flex flex-col md:flex-row justify-center items-center gap-20 flex-wrap m-auto pt-5">
+          {img.map((image, index) => <Image width={386} height={300} className="w-[386px] rounded-xl mb-4" key={index} src={image.url} alt="png" />)}
       </div>
       </div>
           </>
