@@ -15,7 +15,7 @@ export default function Footer() {
 return (
     <footer>
     <div className="flex gap-5 flex-col md:flex-row md:justify-between items-center bg-[#dae7f4] p-10">
-    <Image src="next.svg" width="170" height="170" alt="logo"/>
+    <Image src="/logopet.png" width="170" height="170" alt="logo"/>
     <div className="flex gap-6">
     <IconContext.Provider value={{ className: "shared-class cursor-pointer", size: 30 }}>
     <>
