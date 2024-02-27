@@ -86,11 +86,11 @@ export default function Gallery() {
      
   return (
     <>
-    <div className='w-[1320px] flex flex-col m-auto justify-center'>
-      <h2 className={`${arvo.className} text-5xl text-[rgb(17,24,39)]`}>Gallery</h2>
+    <div className='lg:w-[1320px] flex flex-col m-auto justify-center md:items-center lg:items-start'>
+      <h2 className={`${arvo.className} text-5xl text-[rgb(17,24,39)] `}>Gallery</h2>
     
     <div className="flex flex-col md:flex-row justify-center items-center gap-20 flex-wrap m-auto pt-5">
-          {img.map((image, index) => <Image width={386} height={300} className="w-[386px] rounded-xl mb-4" key={index} src={image.url} alt="png" />)}
+          {img.map((image, index) => <Image width={386} height={300} className="w-[386px] md:w-[300px] rounded-xl mb-4" key={index} src={image.url} alt="png" />)}
       </div>
       </div>
           </>

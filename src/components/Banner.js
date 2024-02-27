@@ -15,7 +15,7 @@ export default function Banner() {
     <>
     <div className="bg-cover bg-center h-[775px]" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZG9nc3xlbnwwfHwwfHx8MA%3D%3D")' }}>
       <div className="bg-gray-400 flex h-[775px] bg-opacity-45">
-        <div className="w-[768px] flex flex-col flex-wrap my-auto ml-4 md:ml-64">
+        <div className="w-[768px] flex flex-col flex-wrap my-auto ml-4 lg:ml-64 md:p-5">
 
         <h1 className={`${arvo.className} text-6xl md:text-7xl mb-[20px] text-[rgb(17,24,39 leading-[80px]`}>Discover Your Perfect Companion</h1>
         <p className={`${lato.className} text-2xl leading-9 decoration-[rgb(17,24,39)]`}>Explore a world of adorable pets waiting to fill your life with joy and love. Find your furry friend today!</p>

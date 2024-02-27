@@ -31,17 +31,17 @@ export default function Services() {
             }
       ]
   return (
-    <div className="bg-[#f0f7fd] py-10 mb-5">
-    <p className={`${lato.className} md:w-[1010px] text-2xl leading-9 text-center m-auto p-10 text-[rgb(17,24,39)]`}>Looking for adorable pets in Hungary? Look no further than Cute Pets! 
+    <div className="bg-[#f0f7fd] py-10 mb-5 px-2">
+    <p className={`${lato.className} lg:w-[1010px] text-2xl leading-9 text-center m-auto p-10 text-[rgb(17,24,39)]`}>Looking for adorable pets in Hungary? Look no further than Cute Pets! 
       Our pet store offers a wide range of furry friends for you to bring home and love. 
       From playful puppies to cuddly kittens, we have the perfect companion for you. 
       Visit us today and find your new best friend at Cute Pets in Hungary.
       </p>
       <div className="flex flex-col justify-start">
-      <h2 className={`${arvo.className} md:ml-64 text-5xl text-[rgb(17,24,39)]`}>Our Services</h2>
-      <div className='flex flex-col md:flex-row justify-center items-center gap-20 m-6'>
+      <h2 className={`${arvo.className} lg:ml-64 md:ml-48 text-5xl text-[rgb(17,24,39)]`}>Our Services</h2>
+      <div className='flex flex-col lg:flex-row justify-center items-center gap-20 m-6'>
 
-        {serviceImg.map((img, index) => <div key={index} className="relative md:w-[385px] h-[615px] bg-cover bg-center rounded-2xl transition-transform duration-300 transform hover:scale-105" style={{ backgroundImage: `url(${img.url})` }}>
+        {serviceImg.map((img, index) => <div key={index} className="relative w-[385px] h-[615px] bg-cover bg-center rounded-2xl transition-transform duration-300 transform hover:scale-105" style={{ backgroundImage: `url(${img.url})` }}>
           <div className="absolute bottom-0 bg-[#131517] rounded-b-2xl bg-opacity-45 md:w-[100%] h-[200px] p-5">
             <h2 className={`${lato.className} text-slate-50 pb-2 text-4xl `}>{img.serviceTitle}</h2>
             <p className={`${lato.className} text-slate-50 text-lg`}>{img.serviceDesc}</p>
