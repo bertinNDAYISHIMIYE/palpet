@@ -86,7 +86,7 @@ export default function Gallery() {
      
   return (
     <>
-    <div className='lg:w-[1320px] flex flex-col m-auto justify-center md:items-center lg:items-start'>
+    <div id='gallery' className='lg:w-[1320px] flex flex-col m-auto justify-center md:items-center lg:items-start'>
       <h2 className={`${arvo.className} text-5xl text-[rgb(17,24,39)] `}>Gallery</h2>
     
     <div className="flex flex-col md:flex-row justify-center items-center gap-20 flex-wrap m-auto pt-5">

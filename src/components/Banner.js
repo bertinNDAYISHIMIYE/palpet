@@ -1,5 +1,6 @@
 import React from 'react'
 import { Arvo, Lato } from "next/font/google";
+import Link from 'next/link';
 
 const arvo = Arvo({
   weight: '400',
@@ -19,7 +20,10 @@ export default function Banner() {
 
         <h1 className={`${arvo.className} text-6xl md:text-7xl mb-[20px] text-[rgb(17,24,39 leading-[80px]`}>Discover Your Perfect Companion</h1>
         <p className={`${lato.className} text-2xl leading-9 decoration-[rgb(17,24,39)]`}>Explore a world of adorable pets waiting to fill your life with joy and love. Find your furry friend today!</p>
-      <button className={`${lato.className} h-14 w-40 md:w-44 px-4 py-3 border-2 border-[rgb(84,94,103)] text-[rgb(255,255,255)] transition-colors duration-150 bg-gray-700 rounded-lg focus:shadow-outline hover:bg-gray-800 text-xl mt-[40px]`}>Explore Now</button>
+        <a href="#gallery"><button className={`${lato.className} h-14 w-40 md:w-44 px-4 py-3 border-2 border-[rgb(84,94,103)] text-[rgb(255,255,255)] transition-colors duration-150 bg-gray-700 rounded-lg focus:shadow-outline hover:bg-gray-800 text-xl mt-[40px]`}>
+        Explore Now
+      </button>
+      </a>
         </div>
 
       </div>
