@@ -39,9 +39,9 @@ export default function Services() {
       </p>
       <div className="flex flex-col justify-start">
       <h2 className={`${arvo.className} lg:ml-64 md:ml-48 text-5xl text-[rgb(17,24,39)]`}>Our Services</h2>
-      <div className='flex flex-col lg:flex-row justify-center items-center gap-20 m-6'>
+      <div className='flex flex-col md:flex-row justify-center items-center gap-20 xs:gap-10 m-6'>
 
-        {serviceImg.map((img, index) => <div key={index} className="relative w-[385px] h-[615px] bg-cover bg-center rounded-2xl transition-transform duration-300 transform hover:scale-105" style={{ backgroundImage: `url(${img.url})` }}>
+        {serviceImg.map((img, index) => <div key={index} className="relative w-[385px] xs:w-[350px] h-[615px] xs:h[600px] bg-cover bg-center rounded-2xl transition-transform duration-300 transform hover:scale-105" style={{ backgroundImage: `url(${img.url})` }}>
           <div className="absolute bottom-0 bg-[#131517] rounded-b-2xl bg-opacity-45 md:w-[100%] h-[200px] p-5">
             <h2 className={`${lato.className} text-slate-50 pb-2 text-4xl `}>{img.serviceTitle}</h2>
             <p className={`${lato.className} text-slate-50 text-lg`}>{img.serviceDesc}</p>

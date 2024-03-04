@@ -59,11 +59,10 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="h-[675px] lg:w-[1320px] m-auto flex justify-between items-center">
-      <div className='w-[50%] flex flex-col  items-center'>
+    <div className="h-[680px] lg:w-[1320px] m-auto flex flex-col md:flex-row md:px-5 justify-between items-center mb-3">
+      <div className='md:w-[50%] flex flex-col  items-center p-5'>
       <h2 className={`${arvo.className} text-5xl p-5 text-[rgb(17,24,39)]`}>Contact Us</h2>
-      <p className={`${lato.className}  text-2xl leading-9 decoration-[rgb(17,24,39)]`}>Thank you for considering PalPet for all your pet needs! We value your feedback, questions, and suggestions.
-         Our team is here to assist you in any way possible.
+      <p className={`${lato.className}  text-2xl leading-9 decoration-[rgb(17,24,39)]`}>Thank you for considering PalPet for all your pet needs! W Our team is here to assist you in any way possible.
           Please feel free to reach out</p>
       </div>
 
