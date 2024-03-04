@@ -8,7 +8,6 @@ import {
 } 
     from "react-icons/fa6";
 import { IconContext } from "react-icons";
-import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
