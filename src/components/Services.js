@@ -12,7 +12,7 @@ const lato = Lato({
 export default function Services() {
     const serviceImg = [
         {
-        url: "https://media.istockphoto.com/id/172859026/photo/black-poodle-in-blue-tub-with-bubbles-on-his-head.webp?b=1&s=170667a&w=0&k=20&c=GfyJlwVqQGJxviDJjNDUIIQ7UOAaHVox3293okxza64=",
+        url: "https://media.istockphoto.com/id/1424319978/hu/fot%C3%B3/aranyos-west-highland-feh%C3%A9r-terrier-f%C3%BCrd%C5%91-ut%C3%A1n-kutya-egy-t%C3%B6r%C3%BClk%C3%B6z%C5%91be-csomagolt-medenc%C3%A9ben.jpg?s=612x612&w=0&k=20&c=938S5cTAmb2CapHUeQE7m4CM0uZBvSxv8lt3eA_CYx4=",
         serviceTitle: "Professional pet grooming services",
         serviceDesc: "Our experienced groomers offer full grooming services tailored to your pet's needs"
         },

@@ -12,7 +12,7 @@ const lato = Lato({
 export default function About() {
   return (
     <div className="bg-[#dae7f4] flex flex-col lg:flex-row justify-center items-center gap-5">
-      <div className="w-full object-fill bg-cover bg-center h-[775px]" style={{ backgroundImage: 'url("https://media.istockphoto.com/id/519363544/hu/fot%C3%B3/szerelem-a-macska-%C3%A9s-a-kutya-k%C3%B6z%C3%B6tt.jpg?s=612x612&w=0&k=20&c=TzqP0597ScT0tPM-nA5wqvZhUKwSqVELP6C-s2Wbkmw=")' }}>
+      <div className="w-full object-fill bg-cover bg-center h-[775px]" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80&w=2835&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")' }}>
       </div>
       <div className="w-full flex flex-col items-center">
         <h2 className={`${arvo.className} text-5xl text-[rgb(17,24,39)] p-5`}>About Us</h2>

@@ -13,7 +13,7 @@ const lato = Lato({
 export default function Navbar() {
   return (
     
-    <header className="w-screen flex justify-between bg-[#dae7f4] p-8">
+    <header className="w-screen flex justify-between bg-[#dae7f4] p-5">
       <Image src="/logopet.png" width="170" height="170" alt="logo"/>
       <button className={`${lato.className} h-11 px-4 border-2 border-[rgb(84, 94,103)] md:px-5 text-gray-100 transition-colors duration-150 bg-gray-700 rounded-lg focus:shadow-outline hover:bg-gray-800 text-2xl`}><a href="tel:06205979764">Call Us</a></button>
     </header>
