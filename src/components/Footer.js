@@ -8,6 +8,7 @@ import {
 } 
     from "react-icons/fa6";
 import { IconContext } from "react-icons";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,10 +20,10 @@ return (
     <div className="flex gap-6 cursor-pointer">
     <IconContext.Provider value={{ className: "shared-class cursor-pointer", size: 31 }}>
     <>
-        <FaXTwitter />
-        <FaSquareInstagram />
-        <FaTiktok  />
-        <FaFacebook />
+        <a href="https://www.x.com/" target="_blank"><FaXTwitter /></a>
+        <a href="https://www.instagram.com/n_bertin_" target="_blank"><FaSquareInstagram /></a>
+        <a href="https://www.tiktok.com/" target="_blank"><FaTiktok  /></a>
+        <a href="https://www.facebook.com" target="_blank"><FaFacebook /></a>
     </>
 </IconContext.Provider>
     </div>
