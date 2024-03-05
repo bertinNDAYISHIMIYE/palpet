@@ -2,6 +2,8 @@ import Image from "next/image";
 import { Arvo, Lato } from "next/font/google";
 import { useEffect, useState } from "react";
 import { FaPhone } from "react-icons/fa6";
+import styles from '../styles/Navbar.module.css'
+import useScroll from "@/helper/useScroll";
 
 const arvo = Arvo({
   weight: '400',
@@ -16,6 +18,18 @@ export default function Navbar() {
   const isClient = typeof window !== 'undefined';
   const initialWidth = isClient ? window.innerWidth : 0;
   const [screenSize, setScreenSize] = useState({ width: initialWidth });
+  const [showNav, setShowNav] = useState(true);
+  const scroll = useScroll();
+
+  // update classList of nav on scroll
+  useEffect(() => {
+
+    if (scroll.y > 150 && scroll.y - scroll.lastY > 0){
+      setShowNav(false);
+    }else {
+      setShowNav(true)
+    }
+  }, [scroll.y, scroll.lastY]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -31,14 +45,14 @@ export default function Navbar() {
     }
   }, [isClient]);
 
-  const logo = screenSize.width > 500 ? 'Call Us' : 'Call Us';
+  const phoneLogo = screenSize.width > 500 ? 'Call Us' : <FaPhone />;
 
-  return (
-    <header className="w-screen flex justify-between bg-[#dae7f4] p-5">
-      <Image src='/logopet.png' width="170" height="0" alt="logo" />
-      <button className={`${lato.className} h-11 px-4 border-2 border-[rgb(84, 94,103)] md:px-5 text-gray-100 transition-colors duration-150 bg-gray-700 rounded-lg focus:shadow-outline hover:bg-gray-800 text-2xl`}>
-        <a href="tel:06205979764">{logo}</a>
-      </button>
-    </header>
-  );
+  return(
+    showNav && (<header className="w-screen flex justify-between bg-[#dae7f4] p-5 fixed z-50">
+    <Image src='/logopet.png' width="170" height="0" alt="logo" />
+    <button className={`${lato.className} h-11 px-4 border-2 border-[rgb(84, 94,103)] md:px-5 text-gray-100 transition-colors duration-150 bg-gray-700 rounded-lg focus:shadow-outline hover:bg-gray-800 text-2xl`}>
+      <a href="tel:06205979764">{phoneLogo}</a>
+    </button>
+  </header>)
+  )
 }
