@@ -37,8 +37,8 @@ export default function Services() {
       From playful puppies to cuddly kittens, we have the perfect companion for you. 
       Visit us today and find your new best friend at Cute Pets in Hungary.
       </p>
-      <div className="flex flex-col justify-start">
-      <h2 className={`${arvo.className} lg:ml-64 md:ml-48 text-5xl text-[rgb(17,24,39)]`}>Our Services</h2>
+      <div className="flex flex-col justify-start sm:items-center xs:items-center">
+      <h2 className={`${arvo.className} text-5xl text-[rgb(17,24,39)]`}>Our Services</h2>
       <div className='flex flex-col md:flex-row justify-center items-center gap-20 xs:gap-10 m-6'>
 
         {serviceImg.map((img, index) => <div key={index} className="relative w-[385px] xs:w-[350px] h-[615px] xs:h[600px] bg-cover bg-center rounded-2xl transition-transform duration-300 transform hover:scale-105" style={{ backgroundImage: `url(${img.url})` }}>
